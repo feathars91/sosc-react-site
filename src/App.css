@@ -12,6 +12,11 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.makeStyles-header-79{
+  background: linear-gradient(
+    87deg,#b90901,#dc3545);
+  }
+  
 
 .App-header {
   background-color: #282c34;

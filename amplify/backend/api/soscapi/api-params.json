@@ -1,0 +1,54 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "getitems",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/items"
+        },
+        {
+            "name": "/users",
+            "lambdaFunction": "getusers",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/users"
+        }
+    ],
+    "resourceName": "soscapi",
+    "apiName": "soscapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "getitems"
+        },
+        {
+            "lambdaFunction": "getusers"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-soscreactsite-dev-160224-authRole",
+        "unAuthRoleName": "amplify-soscreactsite-dev-160224-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "getitems",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "getusers",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
