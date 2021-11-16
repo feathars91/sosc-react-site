@@ -61,6 +61,8 @@ export class Tbl extends Component {
     this.editor = editor;
     this.dataTable = this.$el.DataTable({
       dom: "Bfrtip",
+      "pageLength": 50,
+
       ajax: { 
         url:"https://74xyrsvn3l.execute-api.us-east-1.amazonaws.com/dev/items",
         type: "POST"
